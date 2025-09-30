@@ -33,6 +33,7 @@ int main()
         printf("Your grade is: %c, You passed,\n",grade);
         break;
     case 'F':
+        printf("Your grade is: %c, You Failed,\n",grade);
         break;
     default:
         printf("invalid input\n");
@@ -44,7 +45,7 @@ int main()
         }
         else 
         {
-            printf("You Grade is F, Sorry, Better luck next time,\n");
+            printf("You are not eligible for next level,\n");
         }
 
     return 0;
