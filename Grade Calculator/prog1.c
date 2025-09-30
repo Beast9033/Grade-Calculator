@@ -18,23 +18,34 @@ int main()
     switch (grade)
     {
     case 'A':
-        printf("Your grade is A, Excellent work, You are eligible for next level\n");
+        printf("Your grade is: %c, Excellent work,\n",grade);
         break;
     case 'B':
-        printf("Your grade is B, Good job, You are eligible for next level\n");
+        printf("Your grade is: %c, Good job,\n",grade);
         break;
     case 'C':
-        printf("Your grade is C, Well done, You are eligible for next level\n");
+        printf("Your grade is: %c, Well done,\n",grade);
         break;
     case 'D':
-        printf("Your grade is D, Keep trying, You are eligible for next level\n");
+        printf("Your grade is: %c, Keep trying,\n",grade);
         break;
     case 'E':
-        printf("Your grade is E, You passed, You are eligible for next level\n");
+        printf("Your grade is: %c, You passed,\n",grade);
+        break;
+    case 'F':
         break;
     default:
-        printf("Your grade is F, Sorry, You failed, You are not eligible for next level\n");
+        printf("invalid input\n");
     }
+
+     if (grade=(score >= 40))
+        {
+            printf("You are eligible for next level\n");
+        }
+        else 
+        {
+            printf("You Grade is F, Sorry, Better luck next time,\n");
+        }
 
     return 0;
 }
